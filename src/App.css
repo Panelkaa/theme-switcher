@@ -1,38 +1,254 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --background: #1c1c1c;
+  --text-primary: white;
+  --font: #4a4a4a;
+}
+
+[data-theme="light"] {
+  background-color: var(--background);
+  color: var(--text-primary);
+  --background: #f8f8ff;
+  --text-primary: black;
+  --font: #dcdcdc;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+.app {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 380px;
+  display: flex;
+  padding-top: 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  color: black;
+  margin-top: 9px;
+  margin-right: 10px;
+}
+
+.logo__programmer {
+  font-size: 20px;
   text-align: center;
+  margin: auto 0;
+  margin-right: 145px;
+  color: var(--text-primary);
+  font-family: "Overpass Mono", monospace;
+  letter-spacing: -2px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.switcher {
+  font-size: 2rem;
+  color: var(--text-primary);
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main {
+  width: 320px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about {
+  width: 320px;
+}
+
+.about__title {
+  height: 40px;
+  background-color: var(--font);
+  /* background-color: lightgray; */
+  color: var(--text-primary);
+  text-align: center;
+  border-radius: 4px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.about__programmer {
+  font-size: 30px;
+  color: var(--text-primary);
+  font-family: "Overpass Mono", monospace;
+  letter-spacing: -3px;
+}
+
+.about__status {
+  color: var(--text-primary);
+  font-family: "Overpass Mono", monospace;
+  letter-spacing: -1px;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+
+.about__photo {
+  width: 80px;
+  margin: 0 auto;
+}
+
+.me {
+  width: 80px;
+  height: 80px;
+}
+
+/* --------------------------INFo-------------------- */
+
+.info__title {
+  width: 47px;
+  color: var(--text-primary);
+  font-size: 18px;
+}
+.info__line {
+  width: 47px;
+  height: 3px;
+  background-color: #4a4a4a;
+  margin-bottom: 10px;
+}
+
+.info__text {
+  text-indent: 20px;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.info__btn {
+  width: 140px;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 140px;
+  height: 30px;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #1e90ff;
+  color: black;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-family: "Overpass Mono", monospace;
+  letter-spacing: -1px;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.btn:hover {
+  background: #2c75ff;
+}
+
+.info__link {
+  text-decoration: none;
+  color: black;
+}
+
+/* -------------Bio-------------------- */
+
+.bio {
+  margin-bottom: 15px;
+}
+
+.bio__title {
+  width: 30px;
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+.bio__line {
+  width: 28px;
+  height: 3px;
+  background-color: #4a4a4a;
+  margin-bottom: 10px;
+}
+
+.bio__info {
+  display: flex;
+  width: 325px;
+  color: var(--text-primary);
+  font-family: "Overpass Mono", monospace;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+b {
+  display: block;
+  margin-right: 15px;
+}
+
+/* -----------------------------------HOBBY------------------------- */
+
+.hobby {
+  margin-bottom: 20px;
+}
+
+.hobby__title {
+  width: 30px;
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+.hobby__line {
+  width: 57px;
+  height: 3px;
+  background-color: #4a4a4a;
+  margin-bottom: 10px;
+}
+
+.hobby__text {
+  width: 340px;
+  text-indent: 20px;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  word-spacing: 10px;
+  font-size: 14px;
+}
+
+.hobby__link {
+  text-decoration: none;
+  color: #fe6f5e;
+}
+
+/* ---------------------------WEB-------------------- */
+
+.web__title {
+  /* width: 30px; */
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+.web__line {
+  width: 97px;
+  height: 3px;
+  background-color: #4a4a4a;
+  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.web__link {
+  width: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.link__item {
+  width: 200px;
+  text-decoration: none;
+  color: #1e90ff;
+  margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link__text {
+  margin-left: 6px;
 }
